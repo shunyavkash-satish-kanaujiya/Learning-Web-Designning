@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            LOGO
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1><span>Welcome</span> to Our Website</h1>
+        <p>Your one-stop solution for all your needs. Explore our services and offerings.</p>
+        <button>
+            Explore Now
+        </button>
+    </main>
+
+    <section class="schedule-section">
+        <h2>Event Timing</h2>
+        <div class="schedule">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10:00 AM</td>
+                        <td>Opening Ceremony</td>
+                        <td>
+                            <details>
+                                <summary>View Details</summary>
+                                <p>Welcome speech and introduction to the event.</p>
+                            </details>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12:00 PM</td>
+                        <td>Keynote Speech</td>
+                        <td>
+                            <details>
+                                <summary>View Details</summary>
+                                <p>Insights and future trends in the industry.</p>
+                            </details>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2:00 PM</td>
+                        <td>Workshop</td>
+                        <td>
+                            <details>
+                                <summary>View Details</summary>
+                                <p>Hands-on activities and team collaboration.</p>
+                            </details>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq">
+            <h2>FAQ</h2>
+            <details>
+                <summary>What is this event about?</summary>
+                <p>This event is designed to bring together professionals and enthusiasts to share knowledge and experiences.</p>
+            </details>
+            <details>
+                <summary>Where is the event located?</summary>
+                <p>The event will be held at the downtown conference center.</p>
+            </details>
+            <details>
+                <summary>How can I register?</summary>
+                <p>You can register using the form below or on our website's registration page.</p>
+            </details>
+        </div>
+    </section>
+
+
+    <section class="contact-section">
+        <div class="contact">
+            <div class="contact-banner">
+                <img src="https://images.pexels.com/photos/1114425/pexels-photo-1114425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            </div>
+            <div class="contact-form">
+
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Find Us Here</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093704!2d144.95373531531883!3d-37.81627937975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577bbd8f01a5f0!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1615514054575!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+
+        <div class="social-links">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

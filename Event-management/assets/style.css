@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #c8b6ff;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(184, 192, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav a {
+  margin: 0px 20px;
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: url("https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  font-size: 80px;
+}
+
+main span {
+  color: #e7c6ff;
+}
+
+main p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+main button {
+  background: #c8b6ff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+main button:hover {
+  background: #e7c6ff;
+  color: black;
+}
+
+.schedule-section {
+  padding: 80px 0px;
+}
+
+.schedule {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-section h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.schedule table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule th,
+.schedule td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.schedule th {
+  background-color: #b8c0ff;
+  color: #fff;
+}
+
+details {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+details[open] {
+  background-color: #e7c6ff;
+}
+
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details p {
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.faq-section {
+  background-image: url("https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0px;
+}
+
+.faq {
+  padding: 2rem;
+  background-color: rgba(256, 256, 256, 0.3);
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #808ce5;
+  font-size: 30px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  max-width: 80vw;
+  border-radius: 8px;
+}
+
+.contact-banner img {
+  border-radius: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  margin: 20px 0;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #000;
+  font-size: 35px;
+}
+
+.contact-form form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form form input,
+.contact-form form textarea,
+.contact-form form button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form form button {
+  background: #b8c0ff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contact-form form button:hover {
+  background: #c8b6ff;
+  color: black;
+}
+
+footer {
+  background: #bbd0ff;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+footer iframe {
+  margin-top: 1rem;
+  border: none;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+}
+
+footer .social-links {
+  margin-top: 1rem;
+}
+
+footer .social-links a {
+  margin: 0 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+footer .social-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main h1 {
+    font-size: 40px;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  main button {
+    font-size: 16px;
+  }
+
+  .schedule {
+    padding: 20px;
+  }
+
+  .faq {
+    padding: 1rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer iframe {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo {
+    font-size: 24px;
+  }
+
+  header nav a {
+    margin: 10px;
+    font-size: 0.9rem;
+  }
+
+  main h1 {
+    font-size: 30px;
+  }
+
+  .contact-banner img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
