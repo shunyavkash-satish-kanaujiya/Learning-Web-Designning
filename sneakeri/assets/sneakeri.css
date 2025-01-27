@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+/* HEADER-STYLE--------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: #000;
+}
+.con-qua ul {
+  display: flex;
+}
+.con-qua ul li {
+  margin: 0px 10px;
+  color: white;
+  list-style: none;
+}
+.logo a img {
+  max-width: 200px;
+  max-height: 25px;
+}
+.cart a {
+  text-decoration: none;
+  margin: 0px 15px;
+  font-size: 25px;
+  color: white;
+}
+.cart .toggle {
+  background-color: red;
+  padding: 7px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+/* NAV-LINKS-STYLE---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.nav-section {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 4;
+}
+.nav-section nav {
+  border-bottom: 2px solid black;
+}
+.nav-section nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.nav-section nav ul li {
+  list-style: none;
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* HERO-SECTION-STYLING---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.hero-section {
+  background-image: url(./images/clear-06.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-container {
+  max-width: 1350px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  padding: 220px 0px;
+}
+.hero-row {
+  display: flex;
+  padding: 40px;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero-description .service-p {
+  font-size: 15px;
+  font-weight: 800;
+}
+.hero-description h2 {
+  font-size: 112px;
+  font-weight: 800;
+}
+.hero-description span {
+  color: transparent;
+  -webkit-text-stroke: 3px black;
+}
+.hero-img {
+  position: absolute;
+  z-index: 0;
+  left: 40%;
+}
+.hero-description .exp-p {
+  font-size: 25px;
+  font-weight: 400;
+  max-width: 600px;
+}
+.hero-price {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  z-index: 2;
+}
+.dollar h3 {
+  font-size: 35px;
+  font-weight: 800;
+  margin-right: 20px;
+}
+.value h3 {
+  font-size: 65px;
+  font-weight: 800;
+}
+
+.hero-btn .detail-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 25px;
+}
+.hero-btn .shop-btn {
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+  font-size: 15px;
+  border-radius: 20px;
+}
