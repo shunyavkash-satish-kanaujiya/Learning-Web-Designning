@@ -108,6 +108,15 @@
   position: absolute;
   z-index: 0;
   left: 40%;
+  animation: scale 1s linear infinite alternate-reverse;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 .hero-description .exp-p {
   font-size: 25px;
