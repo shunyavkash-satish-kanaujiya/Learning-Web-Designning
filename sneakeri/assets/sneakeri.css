@@ -36,7 +36,7 @@
 }
 .cart .toggle {
   background-color: red;
-  padding: 7px;
+  padding: 7px 9px;
   font-size: 20px;
   border-radius: 50%;
 }
@@ -63,6 +63,12 @@
   margin: 0 20px;
   font-size: 20px;
   font-weight: 600;
+}
+.nav-section nav ul .link-toggle {
+  display: none;
+  color: black;
+  font-size: 25px;
+  font-weight: 800;
 }
 /* HERO-SECTION-STYLING---------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .hero-section {
@@ -137,4 +143,126 @@
   padding: 10px 30px;
   font-size: 15px;
   border-radius: 20px;
+}
+
+/* STRIP-STYLE--------------------------------------------------------------------------------------------------------- */
+
+.strip-container {
+  position: relative;
+  height: 335px;
+  overflow: hidden;
+  padding: 120px 0px;
+}
+.black-strip-row {
+  border: 2px solid black;
+  padding: 25px;
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  transform-origin: center;
+  transform: rotate(7deg);
+}
+.black-strip-row ul {
+  display: flex;
+  justify-content: center;
+}
+.black-strip-row ul li {
+  list-style: none;
+  margin: 0px 30px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.black-strip-row ul li span {
+  width: 15px;
+  margin: 0px 30px;
+}
+.white-strip-row {
+  width: 120%;
+  left: -10%;
+  position: absolute;
+  border: 2px solid black;
+  z-index: 1;
+  padding: 25px;
+  background-color: black;
+  transform-origin: center;
+  transform: rotate(-7deg);
+}
+.white-strip-row ul {
+  display: flex;
+  justify-content: center;
+}
+.white-strip-row ul li {
+  list-style: none;
+  margin: 0px 30px;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+}
+.white-strip-row ul li span {
+  width: 15px;
+  margin: 0px 30px;
+  color: white;
+}
+
+/* SHOWCASE-ROW------------------------------------------------------------------------------------------------------------------------------------------------- */
+.showcase-container {
+  max-width: 100%;
+}
+.showcase-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 700px;
+}
+.showcase-col1 {
+  background-image: url("./images/showcase-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 60px;
+}
+.showcase-card {
+  background-color: white;
+  padding: 40px;
+}
+.showcase-card span {
+  font-size: 20px;
+  margin-right: 20px;
+  font-weight: 800;
+  color: red;
+}
+.showcase-card p {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 20px 0px;
+}
+.showcase-card h3 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.showcase-card .showcase-btn {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 35px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.showcase-col2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 13px;
+  background-image: linear-gradient(180deg, white 50%, black 0%);
+}
+.show-img {
+  max-width: 100%;
+}
+.show-img img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
