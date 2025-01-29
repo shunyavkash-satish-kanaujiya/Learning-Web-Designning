@@ -145,6 +145,12 @@
   padding: 10px 20px;
   font-size: 15px;
   border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.hero-btn .detail-btn:hover {
+  background-color: white;
+  color: black;
 }
 .hero-btn .shop-btn {
   background-color: white;
@@ -152,6 +158,12 @@
   padding: 10px 30px;
   font-size: 15px;
   border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.hero-btn .shop-btn:hover {
+  background-color: #fe8b69;
+  color: white;
 }
 
 /* STRIP-STYLE--------------------------------------------------------------------------------------------------------- */
@@ -211,6 +223,176 @@
   color: white;
 }
 
+/* PRODUCT-STYLING-------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.product-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-heading p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+.product-heading p span {
+  font-size: 25px;
+  font-weight: 600;
+  color: red;
+  margin: 0px 20px;
+}
+.product-heading h2 {
+  font-size: 48px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+}
+.product-heading h2 span {
+  -webkit-text-stroke: #000 2px;
+  color: transparent;
+  margin: 0px 20px;
+}
+.product-heading h2 span img {
+  max-width: 164px;
+  max-height: 111px;
+  margin: 0px 15px;
+}
+.product-heading .view-all-btn {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 35px;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.product-heading .view-all-btn:hover {
+  background-color: white;
+  color: black;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  padding: 30px;
+}
+.product-content {
+  padding: 30px;
+  border: 1px solid black;
+  position: relative;
+  cursor: pointer;
+}
+.product-content .product-img {
+  width: 100%;
+  position: relative;
+}
+.product-img {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+.default-img,
+.hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.hover-img {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.product-content:hover .default-img {
+  opacity: 0;
+}
+
+.product-content:hover .hover-img {
+  opacity: 1;
+}
+.fitness-bg {
+  background-image: url("./images/fitness-wellness-and-woman-in-sports-fashion-feel-22.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.blend-bg {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.blend-bg .sale {
+  font-size: 18px;
+}
+.blend-bg h3 {
+  font-size: 40px;
+  margin: 20px 0px;
+}
+.blend-bg .fit-p {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+.sitting-girl-bg {
+  background-image: url("./images/square-03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.fit-btn {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 35px;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.fit-btn:hover {
+  background-color: black;
+  color: white;
+}
+.product-detail {
+  margin-top: 20px;
+}
+.product-detail h3 {
+  font-size: 25px;
+}
+.product-detail p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 30px 0px;
+}
+.buy-now {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.buy-now:hover {
+  background-color: white;
+  color: black;
+}
+
 /* SHOWCASE-ROW------------------------------------------------------------------------------------------------------------------------------------------------- */
 .showcase-container {
   max-width: 100%;
@@ -218,7 +400,7 @@
 .showcase-row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 700px;
+  min-height: 700px;
 }
 .showcase-col1 {
   background-image: url("./images/showcase-bg.jpg");
@@ -258,6 +440,12 @@
   padding: 10px 35px;
   border-radius: 20px;
   margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.showcase-card .showcase-btn:hover {
+  background-color: white;
+  color: black;
 }
 .showcase-col2 {
   display: grid;
@@ -267,9 +455,14 @@
 }
 .show-img {
   max-width: 100%;
+  overflow: hidden;
+}
+.show-img:hover img {
+  transform: scale(1.2);
 }
 .show-img img {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 0.3s ease-in-out;
 }
