@@ -168,7 +168,6 @@
   position: absolute;
   width: 120%;
   left: -10%;
-  transform-origin: center;
   transform: rotate(7deg);
 }
 .black-strip-row ul {
@@ -193,7 +192,6 @@
   z-index: 1;
   padding: 25px;
   background-color: black;
-  transform-origin: center;
   transform: rotate(-7deg);
 }
 .white-strip-row ul {

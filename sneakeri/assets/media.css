@@ -22,7 +22,8 @@
     padding: 160px 0px;
   }
   .strip-container {
-    padding: 65px 0px;
+    padding: 70px 0px;
+    height: 250px;
   }
   .black-strip-row ul li {
     font-size: 20px;
@@ -49,9 +50,7 @@
     font-size: 100px;
     font-weight: 800;
   }
-  .strip-container {
-    padding: 60px 0px;
-  }
+
   .black-strip-row ul li {
     font-size: 15px;
     font-weight: 600;
@@ -86,6 +85,7 @@
   }
   .strip-container {
     padding: 50px 0px;
+    height: 200px;
   }
   .black-strip-row ul li {
     font-size: 10px;
