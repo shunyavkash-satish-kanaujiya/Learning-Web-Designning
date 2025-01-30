@@ -7,6 +7,21 @@
   }
 }
 
+/* ------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 1200px) {
+  .img-gallery-container .img-gallery-row {
+    width: 150px;
+    height: 200px;
+  }
+  .img-gallery-container .img-gallery-row .item {
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+      translateZ(450px);
+  }
+  .sneaker-title h2 {
+    bottom: 104px;
+    font-size: 190px;
+  }
+}
 /* ------------------------------------------------------------------------------------------------------------ */
 @media (max-width: 1160px) {
   .hero-img {
@@ -60,6 +75,14 @@
     font-size: 15px;
     font-weight: 600;
   }
+  .brand-logo img {
+    width: 200px;
+    height: 20px;
+  }
+  .sneaker-title h2 {
+    bottom: 89px;
+    font-size: 162px;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -67,19 +90,28 @@
   .hero-img {
     left: 8%;
   }
+  .hero-img img {
+    width: 640px;
+  }
   .hero-container {
     padding: 100px 0px;
   }
   .hero-description h2 {
     font-size: 90px;
   }
+  .brand-logo img {
+    width: 170px;
+    height: 17px;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------------------ */
 @media (max-width: 875px) {
+  .hero-img {
+    left: 15%;
+  }
   .hero-img img {
-    left: 0;
-    width: 700px;
+    width: 620px;
   }
   .hero-description h2 {
     font-size: 70px;
@@ -95,6 +127,10 @@
   .white-strip-row ul li {
     font-size: 10px;
     font-weight: 600;
+  }
+  .sneaker-title h2 {
+    bottom: 76px;
+    font-size: 141px;
   }
 }
 
@@ -116,9 +152,9 @@
   .hero-price {
     justify-content: center;
   }
+
   .hero-img img {
-    left: 0;
-    width: 600px;
+    width: 540px;
   }
   .nav-section nav ul .links {
     display: none;
@@ -132,12 +168,40 @@
   .strip-container {
     display: none;
   }
+  .img-gallery-container {
+    height: 40vh;
+  }
+  .img-gallery-container .img-gallery-row {
+    width: 120px;
+    height: 160px;
+  }
+  .img-gallery-container .img-gallery-row .item {
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+      translateZ(350px);
+  }
+  .model {
+    display: none;
+  }
+  @keyframes rotation {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(360deg);
+    }
+  }
+  .sneaker-title {
+    display: none;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------------------ */
 @media (max-width: 665px) {
+  .hero-img {
+    left: 15%;
+  }
   .hero-img img {
-    width: 380px;
+    width: 350px;
   }
   .hero-container {
     padding: 90px 0px;
@@ -167,8 +231,25 @@
   }
 }
 
+/* ------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .img-gallery-container {
+    height: 30vh;
+  }
+  .img-gallery-container .img-gallery-row {
+    width: 100px;
+    height: 130px;
+  }
+  .img-gallery-container .img-gallery-row .item {
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+      translateZ(250px);
+  }
+}
 /* ------------------------------------------------------------------------------------------------------------ */
 @media (max-width: 425px) {
+  .hero-img {
+    left: 15%;
+  }
   .hero-img img {
     width: 295px;
   }
@@ -206,6 +287,9 @@
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 @media (max-width: 375px) {
+  .hero-img {
+    display: none;
+  }
   .product-heading {
     display: none;
   }
@@ -216,10 +300,16 @@
   .product-img {
     height: 200px;
   }
-}
-/* ------------------------------------------------------------------------------------------------------------ */
-@media (max-width: 320px) {
-  .hero-img {
-    display: none;
+  .signup-form form input {
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+  }
+  .signup-form form .signup-btn {
+    border-radius: 15px;
+    margin-top: 10px;
   }
 }
+/* ------------------------------------------------------------------------------------------------------------ */

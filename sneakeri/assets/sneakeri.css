@@ -107,8 +107,10 @@
 .hero-img {
   position: absolute;
   z-index: 0;
-  left: 40%;
+  left: 35%;
   animation: scale 1s linear infinite alternate-reverse;
+}
+.hero-img img {
 }
 @keyframes scale {
   0% {
@@ -466,3 +468,192 @@
   object-fit: cover;
   transition: all 0.3s ease-in-out;
 }
+
+/* BRAND-LOGO-STYLING----------------------------------------------------------------------------------------------------------------------------------------- */
+.brand-container {
+  background-color: black;
+}
+.brand-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px 20px;
+}
+.brand-logo {
+  margin: 30px 0px;
+}
+.brand-logo img {
+  width: 240px;
+  height: 25px;
+}
+
+/* SIGNUP-STYLING--------------------------------------------------------------------------------------------------------------------------------------------- */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+.signup-row {
+  margin: 30px 0px;
+  max-width: 700px;
+}
+.signup-title {
+  padding: 2px;
+}
+.signup-title h2 {
+  font-size: 50px;
+  font-weight: 800px;
+}
+.signup-title h2 span {
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+}
+
+.signup-form form {
+  margin: 20px 0px;
+  padding: 0px 20px;
+}
+.signup-form form input {
+  font-size: 15px;
+  border: 2px solid black;
+  border-radius: 15px 0px 0px 15px;
+  padding: 10px;
+  width: 60%;
+}
+.signup-form form input::placeholder {
+  color: black;
+}
+.signup-form form .signup-btn {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 10px 35px;
+  border-radius: 0px 15px 15px 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.signup-form form .signup-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* IMG-GALLERY-STYLING----------------------------------------------------------------------------------------------------------------------------- */
+
+.img-gallery-container {
+  width: 100%;
+  height: 85vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-image: url("./images/clear-04.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+.img-gallery-container .img-gallery-row {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 10%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: rotation 50s linear infinite;
+  z-index: 2;
+}
+@keyframes rotation {
+  0% {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+}
+.img-gallery-container .img-gallery-row .item {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+    translateZ(550px);
+}
+.img-gallery-container .img-gallery-row .item img {
+  width: 100%;
+  height: 100%;
+}
+.model {
+  background-image: url("./images/model.png");
+  width: 100%;
+  height: 75vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: auto 130%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 1;
+}
+.sneaker-title {
+  background-color: black;
+}
+.sneaker-title h2 {
+  color: white;
+  font-size: 240px;
+  font-weight: 800;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  bottom: 132px;
+}
+
+/* FOOTER-STYLING--------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.footer-container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+}
+.row1 .footer-title h2 {
+  font-size: 40px;
+}
+.row1 .footer-title p {
+  font-size: 16px;
+  color: #d4d4d4;
+  letter-spacing: 1.2px;
+  margin: 20px 0px;
+}
+.footer-form {
+  width: 50%;
+}
+.footer-form form input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+}
+.footer-form form input::placeholder {
+  color: grey;
+  font-size: 20px;
+}
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+.row3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+} */
