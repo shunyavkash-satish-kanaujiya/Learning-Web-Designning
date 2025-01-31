@@ -5,6 +5,10 @@
   .hero-container {
     padding: 180px 0px;
   }
+  .sneaker-title h2 {
+    bottom: 120px;
+    font-size: 200px;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------------------- */
@@ -83,6 +87,36 @@
     bottom: 89px;
     font-size: 162px;
   }
+  .popup-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pop-left,
+  .pop-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pop-img {
+    max-width: 100%;
+  }
+
+  .popup-row h3 {
+    font-size: 40px;
+  }
+
+  .popup-row p {
+    font-size: 18px;
+  }
+
+  .popup-row button {
+    font-size: 14px;
+    padding: 8px 30px;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -132,6 +166,21 @@
     bottom: 76px;
     font-size: 141px;
   }
+  .footer-form form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-form form input {
+    width: 100%;
+  }
+
+  .footer-form form button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -145,6 +194,31 @@
   .cart {
     display: none;
   }
+
+  .nav-section nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav-section nav ul .links {
+    display: none;
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+  }
+  .link-toggle i {
+    font-size: 25px;
+  }
+  .link-toggle {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .mobile-menu-toggle:checked ~ ul .links {
+    display: block;
+  }
+
   .hero-row {
     text-align: center;
     margin: 0px auto;
@@ -155,12 +229,6 @@
 
   .hero-img img {
     width: 540px;
-  }
-  .nav-section nav ul .links {
-    display: none;
-  }
-  .nav-section nav ul .link-toggle {
-    display: block;
   }
   .hero-description .exp-p {
     font-size: 15px;
@@ -192,6 +260,67 @@
   }
   .sneaker-title {
     display: none;
+  }
+  .row1,
+  .row2,
+  .row3 {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  .row2 {
+    gap: 30px;
+    text-align: center;
+  }
+
+  .shoe-store-box,
+  .info-box,
+  .contact-box {
+    max-width: 100%;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .row2 ul li {
+    justify-content: center;
+  }
+  .call-box {
+    justify-content: center;
+  }
+  .row3 .footer-logo img {
+    width: 100px;
+  }
+  .facility p {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-links {
+    justify-content: center;
+    gap: 10px;
+  }
+  .popup-container {
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+
+  .popup-row h3 {
+    font-size: 30px;
+  }
+
+  .popup-row p {
+    font-size: 16px;
+  }
+
+  .pop-img img {
+    height: auto;
+  }
+
+  .popup-row button {
+    font-size: 14px;
+    padding: 8px 20px;
   }
 }
 
@@ -243,6 +372,59 @@
   .img-gallery-container .img-gallery-row .item {
     transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
       translateZ(250px);
+  }
+  .row1 .footer-title h2 {
+    font-size: 24px;
+  }
+
+  .row1 .footer-title p {
+    font-size: 12px;
+  }
+
+  .footer-form form input {
+    font-size: 16px;
+  }
+
+  .footer-form form button {
+    padding: 8px 30px;
+    font-size: 16px;
+  }
+
+  .row2 h3 {
+    font-size: 18px;
+  }
+  .row2 ul {
+    padding: 5px;
+  }
+  .row2 ul li {
+    justify-content: start;
+  }
+  .row3 .footer-logo img {
+    width: 90px;
+  }
+
+  .facility p {
+    font-size: 14px;
+  }
+
+  .social-links a {
+    font-size: 20px;
+  }
+  .popup-container {
+    margin: 20px auto;
+  }
+
+  .popup-row h3 {
+    font-size: 24px;
+  }
+
+  .popup-row p {
+    font-size: 14px;
+  }
+
+  .popup-row button {
+    font-size: 12px;
+    padding: 6px 15px;
   }
 }
 /* ------------------------------------------------------------------------------------------------------------ */
