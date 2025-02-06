@@ -116,6 +116,7 @@ body {
 .hero-description span {
   color: transparent;
   -webkit-text-stroke: 3px black;
+  mix-blend-mode: difference;
 }
 .hero-img {
   position: absolute;
@@ -670,7 +671,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .img-gallery-container .img-gallery-row .item img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .model {
   background-image: url("./images/model.png");
@@ -823,6 +824,7 @@ footer {
 }
 .facility p {
   display: flex;
+  margin: auto 0px;
   gap: 20px;
 }
 .facility p span {
