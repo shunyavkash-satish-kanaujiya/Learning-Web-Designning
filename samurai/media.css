@@ -49,6 +49,9 @@
   .hero-social-links a {
     margin: 15px;
   }
+  .main-bottom-row p {
+    padding: 0;
+  }
 }
 @media (max-width: 548px) {
   .main-bottom-btn {
