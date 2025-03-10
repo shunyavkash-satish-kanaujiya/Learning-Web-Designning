@@ -5,7 +5,7 @@
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
 }
 body {
-  padding: 10px;
+  padding: 20px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@ body {
   background-repeat: no-repeat;
 }
 .container {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -91,15 +91,14 @@ body {
 form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 form label {
   font-size: 1rem;
-  margin-bottom: 5px;
 }
 form .input {
   padding: 12px;
   width: 100%;
+  margin-top: 10px;
   border-radius: 20px;
   border: 2px solid #ccc;
   transition: all 0.3s ease-in-out;
@@ -109,6 +108,12 @@ form .input:focus {
   outline: none;
   border-color: #888;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.error {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  font-size: 12px;
+  color: red;
 }
 .checkbox {
   display: flex;
@@ -146,10 +151,12 @@ form .input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.form-img img {
   max-width: 100%;
   height: auto;
+}
+.form-img img {
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
 }
 
